@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="preloader" style="opacity: 0; display: none;">
+    <div class="preloader-inner">
+        <div class="preloader-icon">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">Visualizar Aluno</h1>
+                    <p> Aqui você encontra todos os alunos cadastrados no sistema.
+                    </p>
+                </div>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/paginainicial">Página Inicial</a></li>
+                    <li>Visualizar Aluno</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="student-view section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                <div class="student-details-card">
+                    <h4 class="student-title">Detalhes do Aluno</h4>
+
+                    <div class="detail-group">
+                        <label>Matrícula</label>
+                        <div class="detail-value">{{ aluno?.matricula }}</div>
+                    </div>
+
+                    <div class="detail-group">
+                        <label>Nome Completo</label>
+                        <div class="detail-value">{{ aluno?.nome }}</div>
+                    </div>
+
+                    <div class="detail-group">
+                        <label>Data de Nascimento</label>
+                        <div class="detail-value">
+                            {{ aluno?.nascimento }}
+                        </div>
+                    </div>
+
+                    <div class="detail-group">
+                        <label>Data e Hora de Cadastro</label>
+                        <div class="detail-value">
+                            {{ aluno?.dataHoraCadastro }}
+                        </div>
+                    </div>
+                    <div class="student-actions">
+                        <a routerLink="/listaralunos" class="btn-back">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academify - Gestão de Alunos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Hero Section */
+        .hero-area {
+            padding: 50px;
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 600px; /* Limita a largura do conteúdo */
+            margin-left: 50px; /* Espaçamento à esquerda */
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .counter-box {
+            margin-top: 2rem;
+        }
+
+        .counter-box h3 {
+            font-size: 1.4rem;
+        }
+
+        .counter-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff9f00;
+        }
+
+        .hero-buttons {
+            margin-top: 2rem;
+        }
+
+        .hero-buttons .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .hero-buttons .btn.secondary-btn {
+            background-color: #6c757d;
+        }
+
+        .hero-buttons .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .hero-buttons .btn.secondary-btn:hover {
+            background-color: #5a6268;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .hero-area {
+                padding: 30px;
+                height: auto;
+                text-align: center; /* Centraliza o texto no mobile */
+            }
+
+            .hero-content {
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .counter-box h3 {
+                font-size: 1.2rem;
+            }
+
+            .counter-number {
+                font-size: 1.8rem;
+            }
+
+            .hero-buttons .btn {
+                width: 100%; /* Botões ocupando a largura completa */
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-area">
+        <div class="hero-content">
+            <h1>Academify</h1>
+            <div class="counter-box">
+                <h3>Total de Alunos Cadastrados</h3>
+                <div id="totalAlunos" class="counter-number">
+                    <span class="count">{{totalAlunos}}</span>
+                </div>
+                <p>alunos ativos no sistema</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="/inseriraluno" class="btn primary-btn">
+                    Cadastrar Novo Aluno
+                </a>
+                <a href="/listaralunos" class="btn secondary-btn">
+                    Ver Lista de Alunos
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

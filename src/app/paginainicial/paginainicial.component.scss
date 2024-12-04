@@ -1,0 +1,76 @@
+.hero-area {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    color: #020000;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of viewport */
+
+    .hero-content {
+        margin-left: 50px; /* Add some margin to the left */
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .counter-box {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+
+            .counter-number {
+                span.count {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .hero-buttons {
+            margin-top: 2rem;
+
+            .btn {
+                display: block; /* Display as block to make buttons stack vertically */
+                width: 100%; /* Make buttons full-width */
+                padding: 10px 20px;
+                margin: 5px 0; /* Adjust margin for vertical spacing */
+                color: #fff; /* Change text color to white for better contrast */
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1rem;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+
+                &:hover {
+                    background-color: darken(#007bff, 10%);
+                    transform: scale(1.05); /* Slightly enlarge button on hover */
+                }
+
+                &.secondary-btn {
+                    background-color: #6c757d;
+
+                    &:hover {
+                        background-color: darken(#6c757d, 10%);
+                        transform: scale(1.05); /* Slightly enlarge button on hover */
+                    }
+                }
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
